@@ -1,12 +1,7 @@
-import { useState } from "react";
-function Square(props) {
-    
+function Square({ value, onSquareClick }) {
     return (
-      <button
-        className="square"
-        onClick={props.onSquareClick}
-      >
-        {props.value}
+      <button className="square" onClick={onSquareClick}>
+        {value}
       </button>
     );
   }
